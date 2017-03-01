@@ -366,8 +366,18 @@
      z-index: 6666666;
  }
  
+ .pro_des .des_img_1 img {
+     width: 14.832rem;
+     height: 8.888rem;
+ }
+ 
  .des_img_2 {
      margin-top: 2%;
+ }
+ 
+ .des_img_2 img {
+     width: 7.200rem;
+     height: 4.704rem;
  }
  
  .pro_des_font {
