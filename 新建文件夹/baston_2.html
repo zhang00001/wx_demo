@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>baston demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+
+
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/cube.css">
+    <link rel="stylesheet" href="../css/baston.css">
+
+    <!-- Demo styles -->
+
+
+</head>
+
+<body>
+    <!--导航栏-->
+    <div class="navbar">
+        <div class="nav" style="justify-content: space-between;">
+            <div class="back">
+                <img src="../images/img2/back.png" alt="" class="">
+            </div>
+
+            <h1>号码识别设置</h1>
+            <h1>帮助</h1>
+        </div>
+    </div>
+    <div class="con">
+        <div class="bg_bl">
+            <img src="../images/img2/bg_dagou@2x.png" alt="" class="">
+            <div class="check">
+                <h4>检查更新</h4>
+            </div>
+            <div class="yest_day">上次更新日期:2016年9月6日</div>
+        </div>
+        <div class="kuo">
+            <div class="kuo_con">
+                <div class="kuo_1">
+                    <img src="../images/img2/iocn_wenjianbao@2x.png" alt="" class=""> &nbsp;
+                    <h1>号码扩展包</h1>
+                </div>
+                <div class="kuo_1">
+
+                    <h1>NEW</h1>
+                    <img class="next" src="../images/img2/next.png" alt="" class="">
+                </div>
+            </div>
+        </div>
+        <div class="kuo">
+            <div class="kuo_con">
+                <div class="kuo_1">
+                    <img src="../images/img2/iocn_wi-fi@2x.png" alt="" class=""> &nbsp;
+                    <h1>wifi下自动更新</h1>
+                </div>
+                <div class="kuo_1">
+
+                    <input type="checkbox" name="sex" id="male" />
+                    <label for="male"></label>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/swiper.animate1.0.2.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/init.js"></script>
+    <script src="../js/baston.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        $(function() {
+            $(".check").click(function() {
+                $(".check h4").text("检查更新中····");
+                setTimeout(function() {
+                    $(".check h4").text("数据包已经更新");
+                }, 2000);
+            })
+            var m = 0;
+            $("label").click(function() {
+
+                if (m == 1) {
+
+                    $(".check h4").text("检查更新");
+                    m = 0;
+
+                } else {
+                    m = 1;
+                    $(".check h4").text("检查更新中····");
+                    setTimeout(function() {
+                        $(".check h4").text("数据包已经更新");
+
+                    }, 2000);
+
+                }
+            })
+            $(".back").click(function() {
+                window.location.href = "baston.html"
+
+            })
+
+        })
+    </script>
+</body>
+
+</html>
